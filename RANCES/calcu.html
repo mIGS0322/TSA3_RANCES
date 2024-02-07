@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="calcu.css">
+</head>
+<body>
+  <div class="container calculator">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="calculator-screen">
+          <input type="text" class="form-control" id="screen" disabled>
+        </div>
+        <div class="calculator-buttons">
+          <button class="btn btn-light btn-lg" onclick="clearScreen()">C</button>
+          <button class="btn btn-light btn-lg" onclick="del()">DEL</button>
+          <button class="btn btn-light btn-lg" onclick="appendToScreen('%')">%</button>
+          <button class="btn btn-warning btn-lg" onclick="appendToScreen('/')">/</button>
+
+          <button class="btn btn-light btn-lg" onclick="appendToScreen('7')">7</button>
+          <button class="btn btn-light btn-lg" onclick="appendToScreen('8')">8</button>
+          <button class="btn btn-light btn-lg" onclick="appendToScreen('9')">9</button>
+          <button class="btn btn-warning btn-lg" onclick="appendToScreen('*')">x</button>
+
+          <button class="btn btn-light btn-lg" onclick="appendToScreen('4')">4</button>
+          <button class="btn btn-light btn-lg" onclick="appendToScreen('5')">5</button>
+          <button class="btn btn-light btn-lg" onclick="appendToScreen('6')">6</button>
+          <button class="btn btn-warning btn-lg" onclick="appendToScreen('-')">-</button>
+
+          <button class="btn btn-light btn-lg" onclick="appendToScreen('1')">1</button>
+          <button class="btn btn-light btn-lg" onclick="appendToScreen('2')">2</button>
+          <button class="btn btn-light btn-lg" onclick="appendToScreen('3')">3</button>
+          <button class="btn btn-warning btn-lg" onclick="appendToScreen('+')">+</button>
+
+          <button class="btn btn-light btn-lg" onclick="appendToScreen('0')">0</button>
+          <button class="btn btn-light btn-lg" onclick="appendToScreen('.')">.</button>
+          <button class="btn btn-warning btn-lg" onclick="calculate()">=</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="calcu.js"></script>
+</body>
+</html>

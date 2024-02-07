@@ -1,0 +1,67 @@
+body {
+  background-image: url('https://img.freepik.com/free-photo/abstract-textured-backgound_1258-30461.jpg?w=740&t=st=1707291834~exp=1707292434~hmac=dbc28043846431daba3758955b79f6b3fcb7344f18490c43f2bb45605ac30177');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  font-family: Arial, sans-serif; /* Default font family */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  display: flex;
+  
+
+  height: 100vh; /* Ensures the background covers the entire viewport */
+}
+
+.calculator {
+  background-color: #f0f0f0; /* Background color */
+  border-radius: 5px;
+  padding: 20px; /* Adjusted padding */
+  width: 550px; /* Reduced width */
+  display: flex;
+  flex-direction: row; /* Align contents horizontally */
+  
+  
+  margin: auto; /* Center the calculator container */
+}
+
+.calculator-screen {
+  margin-right: 10px; /* Adjusted margin */
+  margin-left: 10px;
+  background-color: #fff; /* Screen background color */
+  border: 1px solid #ccc; /* Screen border */
+  border-radius: 5px;
+  padding: 5px; /* Reduced screen padding */
+  width: 400px;
+}
+
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, calc((400px - 20px) / 4)); /* Updated to have 4 equal-width columns */
+  gap: 10px;
+  justify-items: center; /* Center buttons horizontally within the grid */
+  margin-top: 20px; /* Add space between the screen and buttons */
+}
+
+.btn {
+  font-size: 14px; /* Adjusted font size */
+  border-radius: 8px;
+  border: none;
+  background-color: #e0e0e0; /* Button background color */
+  color: #333; /* Button text color */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Button shadow */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: calc((400px - 20px) / 4); /* Set width based on container width and number of columns */
+  height: 40px; /* Adjusted height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  background-color: #ccc; /* Button hover background color */
+  transform: translateY(-2px); /* Button hover animation */
+}
+
+.btn:active {
+  transform: translateY(0px); /* Button click animation */
+}
